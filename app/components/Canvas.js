@@ -22,6 +22,7 @@ const Canvas = () => {
         width: 50,
         height: 50,
         fill: 'blue',
+         selectable: true,
       });
       canvas.current.add(square);
     }
@@ -32,6 +33,7 @@ const Canvas = () => {
       const circle = new fabric.Circle({
         radius: 25,
         fill: 'red',
+        selectable: true,
       });
       canvas.current.add(circle);
     }
@@ -73,12 +75,15 @@ const Canvas = () => {
   }, []);
 
   return (
+    <div className='m-5 p-5 flex flex-col items-center'>
     <div>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
-      <button className='p-2 m-2 border border-slate-400' onClick={handleSquareDraw}>Draw Square</button>
-      <button className='p-2 m-2 border border-slate-400' onClick={handleCircleDraw}>Draw Circle</button>
-      <button className='p-2 m-2 border border-slate-400' onClick={handlePenDraw}>Pen</button>
-      <button className='p-2 m-2 border border-slate-400' onClick={handleEraser}>Eraser</button>
+      <button className='p-2 m-2 border border-slate-400 rounded' onClick={handleSquareDraw}>Draw Square</button>
+      <button className='p-2 m-2 border border-slate-400 rounded' onClick={handleCircleDraw}>Draw Circle</button>
+      <button className='p-2 m-2 border border-slate-400 rounded' onClick={handlePenDraw}>Pen</button>
+      <button className='p-2 m-2 border border-slate-400 rounded' onClick={handleEraser}>Eraser</button>
+    </div>
+      
       <canvas className='border border-slate-500' ref={canvasRef} />
     </div>
   );
