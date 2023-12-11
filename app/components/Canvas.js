@@ -77,13 +77,14 @@ const Canvas = () => {
     };
   }, []);
 
+
   return (
     <div className='m-2 p-5 flex flex-col items-center'>
     <div className='flex items-center'>
       <input className='w-56 rounded bg-slate-400' type="file" accept="image/*" onChange={handleImageUpload} />
       <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white' onClick={handleSquareDraw}>Draw Square</button>
       <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white' onClick={handleCircleDraw}>Draw Circle</button>
-      <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white' onClick={handlePenDraw}>Pen</button>
+      <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white active:bg-sky-900' onClick={handlePenDraw}>Pen</button>
       <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white' onClick={handleEraser}>Eraser</button>
 
         <label className='mr-2'>
@@ -110,6 +111,7 @@ const Canvas = () => {
       <canvas className='border border-slate-500' ref={canvasRef} />
     </div>
   );
+
 };
 
 export default Canvas;

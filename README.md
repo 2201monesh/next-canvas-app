@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Canvas Application with Fabric.js in Next.js
+
+This is a simple canvas application built using Fabric.js in a Next.js project. The application allows users to draw shapes, upload images, and use a pen or eraser to sketch on the canvas.
+
+## Features
+
+- **Image Upload:**
+  Users can upload images to the canvas. The images can be rotated, resized, and dragged.
+
+- **Drawing Shapes:**
+  Basic shapes like squares and circles can be drawn on the canvas. These shapes can be resized and dragged.
+
+- **Sketching Tool:**
+  - Pen: Users can sketch on the canvas using a pen. The color and stroke width of the pen can be changed.
+  - Eraser: An eraser tool is available to erase sketches on the canvas.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the Repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone <repository-url>
+   cd canvas-app-nextjs
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Install Dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm install
 
-## Learn More
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the Application:**
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Note
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To make any changes in the canvas click on the buttons provided to enable the feature (to draw click on pen and start drawing and when done click on the pen again to disable it before using other feature like eraser or pen stroke)
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Click the "Draw Square" button to add a square to the canvas.
+- Click the "Draw Circle" button to add a circle to the canvas.
+- Click the "Pen" button to enable the pen tool. Adjust the color and width using the input controls.
+- Click the "Eraser" button to enable the eraser tool.
+- Upload images using the file input.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push the changes to your fork.
+5. Open a pull request.
