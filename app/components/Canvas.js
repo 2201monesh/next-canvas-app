@@ -88,7 +88,7 @@ const Canvas = () => {
       <button className='p-2 m-2 border border-slate-400 rounded bg-sky-600 text-white' onClick={handleEraser}>Eraser</button>
 
         <label className='mr-2'>
-         Pen Color:
+         <p className='text-black'>Pen Color:</p>
         <input
           className=''
           type="color"
@@ -98,9 +98,9 @@ const Canvas = () => {
       </label>
 
       <label>
-        Pen Width: 
+        <p className='text-black'>Pen Width: </p>
         <input
-          className='border border-slate-400 w-12 rounded'
+          className='border border-slate-400 w-12 rounded text-black'
           type="number"
           value={penWidth}
           onChange={(e) => setPenWidth(Number(e.target.value))}
